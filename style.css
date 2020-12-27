@@ -6,13 +6,77 @@
 
 html{
   font-family: 'Lato','Arial', sans-serif;
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: 100;
+   
+
   
 }
+
 .logo{
   max-width: 1140px;
   margin:0 auto;
 
+}
+
+header{
+    background-image:url(anthony-fomin-fGSGGFiLkg8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+}
+
+.row{
+    max-width: 1140px;
+    margin:0 auto;
+}
+
+.hero-text-box{
+    position: absolute;
+    width:inherit;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+h1{
+    margin: 0;
+    color: #fff;
+    font-size: 200%;
+    font-weight: 300;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200 px;
+    color: #fff;
+}
+
+.Logo{
+    height: 100px;
+    width: auto;
+    float: left;
+}
+
+.header-nav{
+    list-style: none;
+    float:left;
+}
+
+.header-nav li{
+    display: inline-block;
+    margin-left: 50px;
+    
+    
+}
+
+.header-nav li a{
+    color: #fff;
+    text-decoration: none;
 }
 
