@@ -2,6 +2,7 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+
 }
 
 html{
@@ -13,6 +14,11 @@ html{
   
 }
 
+.row{
+    max-width: 1140 px;
+    margin: auto;
+}
+
 .logo{
   max-width: 1140px;
   margin:0 auto;
@@ -20,17 +26,13 @@ html{
 }
 
 header{
-    background-image:url(Bg.jpg);
+    background-image:url(bg.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
     
 }
 
-.row{
-    max-width: 1140px;
-    margin:0 auto;
-}
 
 .hero-text-box{
     position: absolute;
@@ -58,19 +60,23 @@ h1{
 }
 
 .Logo{
-    height: 100px;
+    margin-top: 0;
+    height: 50px;
     width: auto;
     float: left;
+    margin: 5 px 0;
 }
 
 .header-nav{
     list-style: none;
     float:left;
+    margin-top: 60 px;
 }
 
 .header-nav li{
     display: inline-block;
     margin-left: 50px;
+    margin-top: 60 px;
     
     
 }
@@ -78,5 +84,109 @@ h1{
 .header-nav li a{
     color: #fff;
     text-decoration: none;
+    margin-left: 50 px;
+    margin: 0 50px;
+    margin-top: 25 px;
+    
 }
 
+/* Mobile Navigation */
+.mobile-header-nav {
+    float: right;
+    margin-top: 30 px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-header-nav ion-icon{
+    font-size: 200%;
+    color: #fff;
+}
+
+
+/* Sticky Navigation */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #535151;
+    box-shadow: 0 2 px 2 px #8b6c6c;
+    
+}
+
+.sticky header-nav li a:link active{
+    color: #fff;
+}
+
+
+
+section{
+    padding: 80px 0;
+    
+}
+
+h2{
+    text-align: center;
+}
+
+.feedback{
+    width:50%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+   border:1 px 
+}
+*:focus{outline: none;}
+
+footer{
+    background-color:#333;
+    padding:50 px;
+    
+}
+
+footer ion-icon {
+    color: #fff;
+    display: inline-block;
+    float: right;
+    
+}
+
+.social-medialinks{
+    display: inline-block;
+    list-style: none;
+    float: right;
+    color: azure;
+
+}
+
+.social-medialinks li{
+        display: inline-block;
+    color: #ddd;
+    margin-right: 20 px;
+    list-style: none;
+}
+
+.social-medialinks li a:hover{
+        display: inline-block;
+    color: #ddd;
+    margin-right: 20 px;
+    list-style: none;
+    border: 0;
+}
+
+
+.js--wp-1{
+    opacity: 0;
+}
+
+.js--wp-1.animated{
+    opacity: 1;
+}

@@ -1,0 +1,52 @@
+
+
+
+/* Big Tablet  */
+@media only screen and (max-width: 1200 px){
+    .hero-text-box{
+        position: absolute;
+        width:100%;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        padding: 0 2%;
+    }
+    
+    .row{
+        padding: 0 2%;
+    }
+}
+
+
+/* Small tablet to big tablet  */
+@media only screen and (max-width: 1023 px){
+    
+}
+
+
+
+/* Small Phones to small tablets  */
+@media only screen and (max-width: 767 px){
+    
+}
+
+
+/* mobile navigation */
+.mobile-header-nav {display: inline-block;}
+.header-nav{
+    float:left;
+}
+
+.header-nav li{
+    
+    
+}
+
+
+
+
+/* Small Phones  */
+@media only screen and (max-width: 480 px){
+    
+}
+
