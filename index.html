@@ -3,29 +3,144 @@
 <html lang='en'> 
 
   <head>
-    <link rel="stylesheet"  type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
-    <title>FarmsEra</title>
-    </head>
-
-  <body>
-    
-      <header>
-        <nav>
-            <div class="row">
-                <img src="logo.png" alt="Farmer" class="Logo">
-      <ul class="header-nav">
-          <li> <a href="#">Sign Up</a></li>
-          <li><a href=""> FeedBack</a></li>
-                </ul>
-            </div>
-        </nav>
-                
-      <div class="hero-text-box">
-        <h1 >Farmsera. <br> Your Farmers Market</h1>
-      </div>
-    </header>
       
-  </body>
-</html>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+            <link rel="stylesheet"  type="text/css" href="style.css">
+            <link rel="stylesheet" type="text/css" href="grid.css">
+            <link rel="stylesheet" type="text/css" href="ionicons.css">
+            <link rel="stylesheet" type="text/css" href="queries.css">
+            <link rel="stylesheet" type="text/css" href="animate.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    
+      <title>FarmsEra</title>
+  </head>
+
+    <body>
+
+          <header>
+            <nav class="sticky">
+                <div class="row">
+                    <img src="logo.png" alt="Farmer" class="Logo">
+          <ul class="header-nav js--main-nav">
+              <li> <a href="#">Sign Up</a></li>
+              <li><a href="#feedback"> FeedBack</a></li>
+                    </ul>
+                    <a class="mobile-header-nav js--header-nav"><ion-icon name="reorder-three-outline"></ion-icon></a>
+                </div>
+            </nav>
+
+          <div class="hero-text-box">
+            <h1 >Farmsera. <br> Your Farmers Market</h1>
+              <a class="btn btn-Features js--scroll-to-features" href="#">Shop Online</a>
+              <a class="btn btn-feedback js--scroll-to-feedback" href="#">FeedBack</a>
+          </div>
+
+        </header>
+
+          <section class="features js--features" id ="features">
+        
+              <div class="row">
+                  <h2>Top Feature </h2>
+                  <p class="Feature">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  </p>
+              </div>
+
+              <div class ="row js--wp-1">
+
+                  <div class="col span-1-of-3">
+                      <h3>Feature 1 </h3>
+                          <p>discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" </p>
+              </div>
+
+                  <div class="col span-1-of-3">
+                      <h3>Feature 2 </h3> 
+                      <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+                  </div>
+
+                  <div class="col span-1-of-3">
+                      <h3>Feature 3 </h3> 
+                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour </p>
+                  </div>                          
+              </div>
+          
+        </section>
+
+          <section class="feedback js--feedback" id="feedback">
+              <div class="row">
+                  <h2>Feedback Form</h2>
+              </div>
+              <div class="row">
+                  <form method="post" action="#" class="feedback-form">
+              
+                      <div class="row">
+                          <div class="col span-1-of-3">
+                              <label for="name">Name</label>
+                          </div>
+                          <div class="col span-2-of-3">
+                              <input type="text" name="name" id="name" placeholder="Your name" required>
+                          </div>
+                      </div>
+                      
+                      <div class="row">
+                          <div class="col span-1-of-3">
+                              <label for="email">EMail</label>
+                          </div>
+                          <div class="col span-2-of-3">
+                              <input type="email" name="email" id="email" placeholder="Your eMail" required>
+                          </div>
+                      </div>
+
+                      <div class="row">
+                          <div class="col span-1-of-3">
+                              <label>Enquiry</label>
+                          </div>
+                          <div class="col span-2-of-3">
+                              <textarea name="feedback" placeholder="What would you like to know?">
+                              </textarea>
+                          </div>
+                      </div>
+                      
+                      <div class="row">
+                          <div class="col span-1-of-3">
+                              <label>&nbsp;</label>
+                          </div>
+                          <div class="col span-2-of-3">
+                              <input type="submit" value="Send">
+                          </div>
+                      </div>
+
+                      
+                      
+                  </form>
+              </div>
+                 
+          </section>
+
+          <footer>
+              <div class="row footer-social">
+                  <div class="col span-1-of-2">
+                      <ul class="social-medialinks">
+                          <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                          <li><a href="#"><ion-icon name="logo-pinterest"></ion-icon></a></li>
+                          <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+
+                      </ul>
+                  </div>
+                  <div class="col span-1-of-2">
+                  </div>
+              </div>
+          </footer>
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src ="jquery.waypoints.min.js"></script>
+          <script type="application/javascript" src="scripts.js"></script>
+
+          <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+      </body>
+
+
+    </html>
